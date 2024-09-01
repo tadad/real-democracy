@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Responsive container with inline CSS for mobile and desktop views -->
+<div class="responsive-container">
+  <div class="lite-paper-container">
+    {{ section.content | safe }}
+  </div>
+</div>
+{% endblock content %}
