@@ -1,4 +1,4 @@
-# The Real Democracy Manifesto
+# Real Democracy
 ## Reshaping Government through Blockchain Technology
 The inefficiencies of traditional governmental structures are well-established, often manifesting as bureaucratic inertia, susceptibility to bribery, and electoral manipulation.
 These systemic issues not only hinder effective service delivery and fair policy-making but also perpetuate a cycle of disillusionment with representative democracy itself, prompting calls for more direct and transparent governance models.
