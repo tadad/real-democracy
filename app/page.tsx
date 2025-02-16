@@ -12,6 +12,7 @@ export default function Home() {
 
           <div className="sidebar-card related">	
             <h2><a className="silent-link" href="/blog">Writing</a></h2>
+            <h2><a className="silent-link" href="/about">About</a></h2>
             {/* <h2><a className="silent-link" href="/dairy-index">Diary</a></h2> */}
             <h2><a className="silent-link" href="https://x.com/dac_hus">X.com</a></h2>
           </div>
