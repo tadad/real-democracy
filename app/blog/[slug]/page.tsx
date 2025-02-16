@@ -1,8 +1,8 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import ReactMarkdown from 'react-markdown';
 import type { Post } from '@/types/post';
+import MarkdownRenderer from '@/components/MarkdownRenderer';
 
 function getReadingTime(content: string): string {
   const wordsPerMinute = 200;
@@ -85,9 +85,7 @@ export default async function BlogPost({
           </div>
         )}
       </header>
-      <div className="prose lg:prose-xl">
-        <ReactMarkdown>{post.content}</ReactMarkdown>
-      </div>
+      <MarkdownRenderer content={post.content} />
     </article>
   );
 } 

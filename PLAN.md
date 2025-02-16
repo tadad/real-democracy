@@ -137,6 +137,7 @@ Validation Procedure:
 Browser Rendering: Run the site and visually confirm that styles and layouts are applied consistently.
 Component Testing: Isolate individual components (Header, Footer) to verify they render without styling issues.
 Responsive Design: Test the layout on multiple screen sizes using device emulation.
+
 8. Testing and Debugging
 Local Testing:
 
@@ -154,6 +155,7 @@ Validation Procedure:
 Manual QA: Navigate through every route and use browser dev tools to identify any console errors.
 Automated Tests: If available, run unit and integration tests that include TypeScript type checks.
 Network & Console: Monitor network requests and console logs to catch warnings or errors early.
+
 9. SEO and Performance Optimization
 SEO Enhancements:
 
