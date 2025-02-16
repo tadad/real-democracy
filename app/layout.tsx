@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import "./globals.css";
+import "@/app/styles/styles.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -59,19 +57,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="flex-grow container mx-auto px-4 py-8">
-            {children}
-          </main>
-          <Footer />
-        </div>
+    <html lang="en" data-theme="red">
+      <body
+        // className={`${unna.className} antialiased`}
+      >
+        {children}
       </body>
     </html>
   );

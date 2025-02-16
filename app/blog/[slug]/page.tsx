@@ -83,53 +83,84 @@ export default async function BlogPost({
 
   if (!post) {
     return (
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8">Post Not Found</h1>
-        <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-md">
-          <p className="text-yellow-700">
-            Sorry, the blog post you're looking for doesn't exist.
-          </p>
+      <div className="container-lg markdown-body wrapper">
+        <div className="leftcolumn" />
+        <div className="midcolumn">
+          <div className="notes-entry-container note">
+            <div className="content post-content">
+              <h1 className="text-4xl font-bold mb-8">Post Not Found</h1>
+              <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-md">
+                <p className="text-yellow-700">
+                  Sorry, the blog post you're looking for doesn't exist.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        <div className="rightcolumn" />
       </div>
     );
   }
 
   return (
-    <article className="max-w-4xl mx-auto">
-      <header className="mb-8">
-        <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-        <div className="flex items-center text-sm text-gray-500 mb-4 space-x-4">
-          <time dateTime={post.date}>
-            {new Date(post.date).toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            })}
-          </time>
-          {post.readingTime && (
-            <>
-              <span>·</span>
-              <span>{post.readingTime}</span>
-            </>
-          )}
-        </div>
-        {post.description && (
-          <p className="text-xl text-gray-600 mb-4">{post.description}</p>
-        )}
-        {post.tags && post.tags.length > 0 && (
-          <div className="flex flex-wrap gap-2 mb-8">
-            {post.tags.map(tag => (
-              <span
-                key={tag}
-                className="px-2 py-1 bg-gray-100 text-gray-600 text-sm rounded-md"
-              >
-                {tag}
-              </span>
-            ))}
+    <div className="container-lg markdown-body wrapper">
+      <div className="leftcolumn" />
+      <div className="midcolumn">
+        <main>
+          <article>
+            <div className="notes-entry-container note">
+              <div className="content post-content">
+                <header className="mb-8">
+                  <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+                  <div className="flex items-center text-sm text-gray-500 mb-4 space-x-4">
+                    <time dateTime={post.date}>
+                      {new Date(post.date).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      })}
+                    </time>
+                    {post.readingTime && (
+                      <>
+                        <span>·</span>
+                        <span>{post.readingTime}</span>
+                      </>
+                    )}
+                  </div>
+                  {post.description && (
+                    <p className="text-xl text-gray-600 mb-4">{post.description}</p>
+                  )}
+                  {post.tags && post.tags.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mb-8">
+                      {post.tags.map(tag => (
+                        <span
+                          key={tag}
+                          className="px-2 py-1 bg-gray-100 text-gray-600 text-sm rounded-md"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </header>
+                <MarkdownRenderer content={post.content} />
+              </div>
+            </div>
+          </article>
+        </main>
+        <div className="license">
+          <div>
+            <a className="internal-link" href="https://viralpubliclicense.org">
+              VIRAL PUBLIC LICENSE
+              <br/>
+              Copyleft (ɔ) All Rights Reversed
+            </a>
           </div>
-        )}
-      </header>
-      <MarkdownRenderer content={post.content} />
-    </article>
+        </div>
+      </div>
+      <div className="rightcolumn">
+        {/* <section className="toc-right"></section> */}
+      </div>
+    </div>
   );
-} 
+}

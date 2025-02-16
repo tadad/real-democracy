@@ -1,0 +1,63 @@
+//This stylesheet normalizes formatting across browsers:
+@use "./partials/_normalize";
+@use "./partials/_code";
+
+
+//Uncomment one of the following lines to choose a theme:
+
+@use "./partials/_directory";
+//@import "../_sass/directory-light";
+//@import "../_sass/gemini"; // Doesn't work yet
+
+
+@use "./partials/responsive";
+
+
+
+/*-----------------------------
+
+ CUSTOM BACKGROUND 
+Uncomment one of the below lines to override the background color/image of your chosen theme. 'theme' will leave the default theme background. */
+
+
+// $bg-color: theme; /* <-- leave default theme BG color */
+
+// $bg-image: theme; /* <-- leave default theme BG image */
+
+
+//$bg-image: url(assets/imgs/BGs/bgtile-1.png);
+
+//$bg-image: url(assets/imgs/BGs/bgtile-2.png);
+
+//$bg-image: url(assets/imgs/BGs/bgtile-3.png);
+
+//$bg-image: url(assets/imgs/BGs/bgtile-4.png);
+
+//$bg-image: url(assets/imgs/BGs/bgtile-5.png);
+
+/*There are 30 sample background tiles to choose from in assets > imgs > BGs*/
+
+
+/*-----------------------------*/
+
+// body {
+    
+//     background-color: $bg-color;
+    
+//     background-image: $bg-image;
+// }
+
+// Layout styles
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}

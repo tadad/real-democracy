@@ -1,17 +1,22 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="max-w-4xl mx-auto">
-      <h1 className="text-4xl font-bold mb-8">Welcome to My Blog</h1>
-      <p className="text-xl text-gray-600 mb-6">
-        Explore thoughts, ideas, and insights about technology, programming, and more.
-      </p>
-      <div className="bg-gray-100 p-6 rounded-lg">
-        <h2 className="text-2xl font-semibold mb-4">Latest Posts</h2>
-        <p className="text-gray-600">
-          Blog posts will appear here once they are added to the posts directory.
-        </p>
+    <div className="container-lg markdown-body wrapper">
+      <div className="midcolumn-home">
+        <div className="home-double">
+
+          <div></div>
+          <div className="title">
+            <h1 className="title-text">Real Democracy</h1>
+            <h2 className="subtitle-text" style={{"marginTop": "0", "marginBottom": "0"}}>+!+!+!+!+!+!+!+!+!+!+!+!+</h2>
+          </div>
+
+          <div className="sidebar-card related">	
+            <h2><a className="silent-link" href="/blog">Writing</a></h2>
+            {/* <h2><a className="silent-link" href="/dairy-index">Diary</a></h2> */}
+            <h2><a className="silent-link" href="https://x.com/dac_hus">X.com</a></h2>
+          </div>
+          <img src="/image.png" alt="REAL DEMOCRACY" className="home-img-container" />
+        </div>
       </div>
     </div>
   );
