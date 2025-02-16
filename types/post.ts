@@ -4,9 +4,10 @@ export interface PostMeta {
   slug: string;
   description?: string;
   tags?: string[];
+  readingTime?: string;
+  excerpt?: string;
 }
 
 export interface Post extends PostMeta {
   content: string;
-  readingTime?: string;
 } 

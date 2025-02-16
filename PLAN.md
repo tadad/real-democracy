@@ -79,6 +79,7 @@ Validation Procedure:
 Manual Navigation: Run the development server and click through the Home and About pages to ensure they render correctly.
 Type Checks: Confirm that TypeScript does not report missing or mis-typed props.
 Visual Consistency: Verify that the global layout is applied uniformly across all pages.
+
 5. Implementing the Blog List Page
 Page Creation (/app/blog/page.tsx):
 
@@ -103,6 +104,7 @@ Validation Procedure:
 Data Logging: Temporarily log the output of your data-fetching logic to verify that Markdown files are read and parsed correctly.
 Visual Verification: Visit /blog in the browser and ensure the list of posts displays accurate metadata.
 Error Handling: Test with a malformed Markdown file to confirm that errors are handled gracefully.
+
 6. Markdown-to-HTML Rendering Strategy
 Conversion Approach:
 
@@ -120,6 +122,7 @@ Validation Procedure:
 Render a Sample: Create a temporary component that converts a hard-coded Markdown string to HTML and renders it.
 Type Verification: Ensure the processed content aligns with your defined TypeScript interfaces.
 SEO Inspection: Check the rendered HTML in the browser’s “view source” or dev tools to confirm proper content output.
+
 7. Styling and Layout with TypeScript
 Global Styles:
 
