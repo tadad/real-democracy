@@ -30,7 +30,7 @@ function getExcerpt(content: string, maxLength: number = 200): string {
 }
 
 async function getPosts(): Promise<PostMeta[]> {
-  const postsDirectory = path.join(process.cwd(), 'posts');
+  const postsDirectory = path.join(process.cwd(), 'content', 'blogs');
   
   try {
     const files = await fs.readdir(postsDirectory);

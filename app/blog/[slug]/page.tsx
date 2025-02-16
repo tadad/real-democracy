@@ -14,7 +14,7 @@ function getReadingTime(content: string): string {
 
 async function getPost(slug: string): Promise<Post | null> {
   try {
-    const postsDirectory = path.join(process.cwd(), 'posts');
+    const postsDirectory = path.join(process.cwd(), 'content', 'blogs');
     const fullPath = path.join(postsDirectory, `${slug}.md`);
     const fileContents = await fs.readFile(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
