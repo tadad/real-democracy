@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import type { Post } from '@/types/post';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
+import type { Metadata, ResolvingMetadata } from 'next';
 
 function getReadingTime(content: string): string {
   const wordsPerMinute = 200;
@@ -30,6 +31,49 @@ async function getPost(slug: string): Promise<Post | null> {
   }
 }
 
+type Props = {
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const post = await getPost(params.slug);
+  
+  if (!post) {
+    return {
+      title: 'Post Not Found',
+      description: 'The requested blog post could not be found.',
+    };
+  }
+
+  const previousImages = (await parent).openGraph?.images || [];
+
+  return {
+    title: post.title,
+    description: post.description || `Read ${post.title} on My Blog`,
+    keywords: post.tags,
+    authors: [{ name: 'Your Name' }],
+    openGraph: {
+      title: post.title,
+      description: post.description || `Read ${post.title} on My Blog`,
+      type: 'article',
+      publishedTime: post.date,
+      authors: ['Your Name'],
+      tags: post.tags,
+      images: previousImages,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description || `Read ${post.title} on My Blog`,
+      creator: '@yourusername',
+    },
+  };
+}
+
 export default async function BlogPost({
   params,
 }: {
@@ -55,7 +99,7 @@ export default async function BlogPost({
       <header className="mb-8">
         <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
         <div className="flex items-center text-sm text-gray-500 mb-4 space-x-4">
-          <time>
+          <time dateTime={post.date}>
             {new Date(post.date).toLocaleDateString('en-US', {
               year: 'numeric',
               month: 'long',
