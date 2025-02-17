@@ -5,13 +5,6 @@ import type { Post } from '@/types/post';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
 import type { Metadata, ResolvingMetadata } from 'next';
 
-function getReadingTime(content: string): string {
-  const wordsPerMinute = 200;
-  const words = content.trim().split(/\s+/).length;
-  const minutes = Math.ceil(words / wordsPerMinute);
-  return `${minutes} min read`;
-}
-
 async function getPost(slug: string): Promise<Post | null> {
   try {
     const postsDirectory = path.join(process.cwd(), 'content', 'blogs');
@@ -23,7 +16,6 @@ async function getPost(slug: string): Promise<Post | null> {
       ...data,
       slug,
       content,
-      readingTime: getReadingTime(content),
     } as Post;
   } catch (error) {
     console.error('Error reading post:', error);
@@ -112,7 +104,8 @@ export default async function BlogPost({
               <div className="content post-content">
                 <header className="mb-8">
                   <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-                  <div className="flex items-center text-sm text-gray-500 mb-4 space-x-4">
+                  <div className="flex items-center text-sm text-gray-500 mb-4 space-x-4" style={{"textAlign": "center"}}>
+                    +!+
                     <time dateTime={post.date}>
                       {new Date(post.date).toLocaleDateString('en-US', {
                         year: 'numeric',
@@ -120,28 +113,8 @@ export default async function BlogPost({
                         day: 'numeric'
                       })}
                     </time>
-                    {post.readingTime && (
-                      <>
-                        <span>·</span>
-                        <span>{post.readingTime}</span>
-                      </>
-                    )}
+                    +!+
                   </div>
-                  {post.description && (
-                    <p className="text-xl text-gray-600 mb-4">{post.description}</p>
-                  )}
-                  {post.tags && post.tags.length > 0 && (
-                    <div className="flex flex-wrap gap-2 mb-8">
-                      {post.tags.map(tag => (
-                        <span
-                          key={tag}
-                          className="px-2 py-1 bg-gray-100 text-gray-600 text-sm rounded-md"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  )}
                 </header>
                 <MarkdownRenderer content={post.content} />
               </div>
