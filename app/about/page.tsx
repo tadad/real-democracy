@@ -5,6 +5,8 @@ import type { Post } from '@/types/post';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import License from '@/components/License';
+import PostContainer from '@/components/PostContainer';
 
 async function getAboutContent(): Promise<Post | null> {
   try {
@@ -81,57 +83,8 @@ export default async function AboutPage() {
     <div className="container-lg markdown-body wrapper">
       <div className="leftcolumn" />
       <div className="midcolumn">
-        <main>
-          <article>
-            <div className="notes-entry-container note">
-              <div className="content post-content">
-                <header className="mb-8">
-                  <Link
-                    href="/"
-                    className="text-sm text-gray-500 hover:text-accent mb-4 inline-block"
-                  >
-                    ← Back to Home
-                  </Link>
-                  <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-                  <div className="flex items-center text-sm text-gray-500 mb-4 space-x-4">
-                    <time dateTime={post.date}>
-                      {new Date(post.date).toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                      })}
-                    </time>
-                  </div>
-                  {post.description && (
-                    <p className="text-xl text-gray-600 mb-4">{post.description}</p>
-                  )}
-                  {post.tags && post.tags.length > 0 && (
-                    <div className="flex flex-wrap gap-2 mb-8">
-                      {post.tags.map(tag => (
-                        <span
-                          key={tag}
-                          className="px-2 py-1 bg-gray-100 text-gray-600 text-sm rounded-md"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </header>
-                <MarkdownRenderer content={post.content} />
-              </div>
-            </div>
-          </article>
-        </main>
-        <div className="license">
-          <div>
-            <a className="internal-link" href="https://viralpubliclicense.org">
-              VIRAL PUBLIC LICENSE
-              <br />
-              Copyleft (ɔ) All Rights Reversed
-            </a>
-          </div>
-        </div>
+        <PostContainer post={post} showBackToHome={true} />
+        <License />
       </div>
       <div className="rightcolumn" />
     </div>

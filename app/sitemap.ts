@@ -14,7 +14,7 @@ async function getBlogPosts(): Promise<Route[]> {
     return files
       .filter(file => file.endsWith('.md'))
       .map(file => ({
-        url: `/blog/${file.replace(/\.md$/, '')}`,
+        url: `/writing/${file.replace(/\.md$/, '')}`,
         lastModified: new Date(),
       }));
   } catch (error) {
@@ -40,7 +40,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     {
-      url: 'http://localhost:3000/blog',
+      url: 'http://localhost:3000/writing',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,

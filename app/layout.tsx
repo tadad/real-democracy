@@ -1,41 +1,34 @@
 import type { Metadata } from 'next';
 import '@/app/styles/styles.scss';
 
+const name = 'On Chain Society';
+const description = 'On Chain Society is about the future of government and blockchain technology.';
+
 export const metadata: Metadata = {
   title: {
-    default: 'My Blog',
-    template: '%s | My Blog',
+    default: name,
+    template: `%s | ${name}`,
   },
-  description:
-    'A blog built with Next.js and TypeScript, featuring articles about web development and technology.',
-  keywords: ['blog', 'nextjs', 'typescript', 'react', 'web development'],
-  authors: [{ name: 'Your Name' }],
+  description,
+  keywords: ['government', 'democracy', 'blockchain', 'crypto', 'web development'],
+  authors: [{ name: 'Dachus' }],
   creator: 'Your Name',
-  metadataBase: new URL('http://localhost:3000'),
+  metadataBase: new URL('http://localhost:3000'), // TODO
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: '/',
-    siteName: 'My Blog',
-    title: 'My Blog',
-    description:
-      'A blog built with Next.js and TypeScript, featuring articles about web development and technology.',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'My Blog',
-      },
-    ],
+    siteName: name,
+    title: name,
+    description,
+    images: ['/image.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'My Blog',
-    description:
-      'A blog built with Next.js and TypeScript, featuring articles about web development and technology.',
-    creator: '@yourusername',
-    images: ['/og-image.jpg'],
+    title: name,
+    description,
+    creator: '@dac_hus',
+    images: ['/image.png'],
   },
   robots: {
     index: true,

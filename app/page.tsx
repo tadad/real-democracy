@@ -8,7 +8,7 @@ export default function Home() {
         <div className="home-double">
           <div></div>
           <div className="title">
-            <h1 className="title-text">Real Democracy</h1>
+            <h1 className="title-text">On Chain Society</h1>
             <h2 className="subtitle-text" style={{ marginTop: '0', marginBottom: '0' }}>
               +!+!+!+!+!+!+!+!+!+!+!+!+
             </h2>
@@ -16,7 +16,7 @@ export default function Home() {
 
           <div className="sidebar-card related">
             <h2>
-              <Link className="silent-link" href="/blog">
+              <Link className="silent-link" href="/writing">
                 Writing
               </Link>
             </h2>

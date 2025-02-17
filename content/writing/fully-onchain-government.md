@@ -1,20 +1,32 @@
 ---
 title: Fully On-Chain Government
 date: '2025-02-17'
-description: A fully on chain society for the 21st century
+description: Blockchains are internet native governments. What does this mean?
 tags: ['democracy', 'blockchain', 'government']
 ---
 
 # v0.0.1
 
-Blockchain is not about disentangling money from the state; it is about building a new global state with a new money.
+Representative democracy is in crisis.
+Blockchain is the solution.
+
+Most people see blockchain as
+
+- a technology to create new monies
+- a world computer
+- a big casino
+- a scam
+
+All of these are correct, and yet none of them capture the big picture vision: blockchain is an internet native government.
+As the 21st century continues, this will only become more obvious.
+It began with disentangling money from the state, and it will end by disintegrating the state entirely.
+
 Most blockchains already handle core government services: identity, record-keeping, incorporation, a financial system, etc.
-Furthermore, they are much more efficient than **any** government for these services.
-On a blockchain, incorporation, identity management, and sending money all happen in a matter of seconds and a few clicks. Contrast this with the long lines at the DMV, the 3 days it takes to send an wire transfer, or the fraud that occurs due to the insecurity of social-security numbers.
+All of these operations happen in a matter of seconds and a few clicks.
+Contrast this with the long lines at the DMV, the 3 days it takes to send an wire transfer, and rampant identity fraud.
 Every day it gets easier to live without a boomer-government and live your entire life on-chain.
 
 By the end of the 21st century, chains will eat governments entirely.
-Here is a rough picture of how governemnt and society will change as a result of blockchain:
 
 ## Anything can vote / A vote is just an Asset
 

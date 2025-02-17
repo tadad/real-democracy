@@ -3,12 +3,14 @@ import path from 'path';
 import matter from 'gray-matter';
 import type { Post } from '@/types/post';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
+import License from '@/components/License';
+import PostContainer from '@/components/PostContainer';
 import type { Metadata } from 'next';
 import React from 'react';
 
 async function getPost(slug: string): Promise<Post | null> {
   try {
-    const postsDirectory = path.join(process.cwd(), 'content', 'blogs');
+    const postsDirectory = path.join(process.cwd(), 'content', 'writing');
     const fullPath = path.join(postsDirectory, `${slug}.md`);
     const fileContents = await fs.readFile(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
@@ -31,18 +33,18 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
   if (!post) {
     return {
       title: 'Post Not Found',
-      description: 'The requested blog post could not be found.',
+      description: 'The requested post could not be found.',
     };
   }
 
   return {
     title: post.title,
-    description: post.description || `Read ${post.title} on My Blog`,
+    description: post.description || post.title,
     keywords: post.tags,
-    authors: [{ name: 'Your Name' }],
+    authors: [{ name: 'Dachus' }],
     openGraph: {
       title: post.title,
-      description: post.description || `Read ${post.title} on My Blog`,
+      description: post.description || post.title,
       type: 'article',
       publishedTime: post.date,
     },
@@ -78,41 +80,8 @@ export default async function BlogPost({ params }: any) {
     <div className="container-lg markdown-body wrapper">
       <div className="leftcolumn" />
       <div className="midcolumn">
-        <main>
-          <article>
-            <div className="notes-entry-container note">
-              <div className="content post-content">
-                <header className="mb-8">
-                  <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-                  <div
-                    className="flex items-center text-sm text-gray-500 mb-4 space-x-4"
-                    style={{ textAlign: 'center' }}
-                  >
-                    {post.date && (
-                      <time dateTime={post.date}>
-                        {new Date(post.date).toLocaleDateString('en-US', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric',
-                        })}
-                      </time>
-                    )}
-                  </div>
-                </header>
-                <MarkdownRenderer content={post.content} />
-              </div>
-            </div>
-          </article>
-        </main>
-        <div className="license">
-          <div>
-            <a className="internal-link" href="https://viralpubliclicense.org">
-              VIRAL PUBLIC LICENSE
-              <br />
-              Copyleft (ɔ) All Rights Reversed
-            </a>
-          </div>
-        </div>
+        <PostContainer post={post} />
+        <License />
       </div>
       <div className="rightcolumn">{/* <section className="toc-right"></section> */}</div>
     </div>
