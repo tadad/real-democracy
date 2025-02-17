@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import type { Post } from '@/types/post';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
-import type { Metadata, ResolvingMetadata } from 'next';
+import type { Metadata } from 'next';
 
 async function getPost(slug: string): Promise<Post | null> {
   try {
@@ -11,7 +11,7 @@ async function getPost(slug: string): Promise<Post | null> {
     const fullPath = path.join(postsDirectory, `${slug}.md`);
     const fileContents = await fs.readFile(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
-    
+
     return {
       ...data,
       slug,
@@ -28,20 +28,15 @@ type Props = {
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = await getPost(params.slug);
-  
+
   if (!post) {
     return {
       title: 'Post Not Found',
       description: 'The requested blog post could not be found.',
     };
   }
-
-  const previousImages = (await parent).openGraph?.images || [];
 
   return {
     title: post.title,
@@ -55,7 +50,6 @@ export async function generateMetadata(
       publishedTime: post.date,
       authors: ['Your Name'],
       tags: post.tags,
-      images: previousImages,
     },
     twitter: {
       card: 'summary_large_image',
@@ -66,11 +60,7 @@ export async function generateMetadata(
   };
 }
 
-export default async function BlogPost({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default async function BlogPost({ params }: { params: { slug: string } }) {
   const post = await getPost(params.slug);
 
   if (!post) {
@@ -83,7 +73,7 @@ export default async function BlogPost({
               <h1 className="text-4xl font-bold mb-8">Post Not Found</h1>
               <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-md">
                 <p className="text-yellow-700">
-                  Sorry, the blog post you're looking for doesn't exist.
+                  Sorry, the blog post you&apos;re looking for doesn&apos;t exist.
                 </p>
               </div>
             </div>
@@ -104,16 +94,19 @@ export default async function BlogPost({
               <div className="content post-content">
                 <header className="mb-8">
                   <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-                  <div className="flex items-center text-sm text-gray-500 mb-4 space-x-4" style={{"textAlign": "center"}}>
-                    +!+
-                    <time dateTime={post.date}>
-                      {new Date(post.date).toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric'
-                      })}
-                    </time>
-                    +!+
+                  <div
+                    className="flex items-center text-sm text-gray-500 mb-4 space-x-4"
+                    style={{ textAlign: 'center' }}
+                  >
+                    {post.date && (
+                      <time dateTime={post.date}>
+                        {new Date(post.date).toLocaleDateString('en-US', {
+                          year: 'numeric',
+                          month: 'long',
+                          day: 'numeric',
+                        })}
+                      </time>
+                    )}
                   </div>
                 </header>
                 <MarkdownRenderer content={post.content} />
@@ -125,15 +118,13 @@ export default async function BlogPost({
           <div>
             <a className="internal-link" href="https://viralpubliclicense.org">
               VIRAL PUBLIC LICENSE
-              <br/>
+              <br />
               Copyleft (ɔ) All Rights Reversed
             </a>
           </div>
         </div>
       </div>
-      <div className="rightcolumn">
-        {/* <section className="toc-right"></section> */}
-      </div>
+      <div className="rightcolumn">{/* <section className="toc-right"></section> */}</div>
     </div>
   );
 }

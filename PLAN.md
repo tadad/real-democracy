@@ -1,5 +1,5 @@
 1. Project Setup
-Environment Preparation:
+   Environment Preparation:
 
 Initialize the Next.js App with TypeScript & App Directory:
 
@@ -13,9 +13,8 @@ Run the Dev Server: Start the project using npm run dev or yarn dev and verify t
 TypeScript Check: Ensure the project contains a valid tsconfig.json file and that no type errors are present.
 Directory Inspection: Manually verify that the /app, /posts, /components, and /types directories exist as planned.
 
-
 2. Dependency Installation and Tooling
-Core Dependencies:
+   Core Dependencies:
 
 Next.js and React are included with the TypeScript template.
 Markdown Handling:
@@ -36,7 +35,7 @@ Dependency Check: Verify that package.json includes all required dependencies an
 Linting & Type Check: Run the linter and execute tsc --noEmit to confirm there are no configuration or type errors.
 
 3. Project Structure and File Organization
-App Directory Routes:
+   App Directory Routes:
 
 /app/page.tsx: Home page.
 /app/about/page.tsx: About page.
@@ -62,7 +61,7 @@ Interface Test: Import and use your defined types in a temporary component to en
 Component Rendering: Render a simple test component within /app to verify it compiles and displays correctly.
 
 4. Building the Static Pages
-Home Page (/app/page.tsx):
+   Home Page (/app/page.tsx):
 
 Develop a landing page that introduces the site and includes navigation links to the About and Blog pages.
 Wrap the content in the global layout from /app/layout.tsx.
@@ -81,7 +80,7 @@ Type Checks: Confirm that TypeScript does not report missing or mis-typed props.
 Visual Consistency: Verify that the global layout is applied uniformly across all pages.
 
 5. Implementing the Blog List Page
-Page Creation (/app/blog/page.tsx):
+   Page Creation (/app/blog/page.tsx):
 
 Use an async server component (or a dedicated function) in the App Router to fetch blog data at build time.
 Markdown Processing Steps:
@@ -106,7 +105,7 @@ Visual Verification: Visit /blog in the browser and ensure the list of posts dis
 Error Handling: Test with a malformed Markdown file to confirm that errors are handled gracefully.
 
 6. Markdown-to-HTML Rendering Strategy
-Conversion Approach:
+   Conversion Approach:
 
 Decide whether to convert Markdown server-side during static generation or dynamically on the client.
 For server-side conversion, process Markdown into HTML before passing it to the component.
@@ -124,7 +123,7 @@ Type Verification: Ensure the processed content aligns with your defined TypeScr
 SEO Inspection: Check the rendered HTML in the browser’s “view source” or dev tools to confirm proper content output.
 
 7. Styling and Layout with TypeScript
-Global Styles:
+   Global Styles:
 
 Define global CSS in a file (e.g., /app/globals.css) and import it in /app/layout.tsx.
 Alternatively, use Tailwind CSS or CSS modules for component-specific styling.
@@ -139,7 +138,7 @@ Component Testing: Isolate individual components (Header, Footer) to verify they
 Responsive Design: Test the layout on multiple screen sizes using device emulation.
 
 8. Testing and Debugging
-Local Testing:
+   Local Testing:
 
 Run the development server using npm run dev or yarn dev.
 Manually navigate between Home, About, and Blog pages to verify routing and component behavior.
@@ -157,7 +156,7 @@ Automated Tests: If available, run unit and integration tests that include TypeS
 Network & Console: Monitor network requests and console logs to catch warnings or errors early.
 
 9. SEO and Performance Optimization
-SEO Enhancements:
+   SEO Enhancements:
 
 Utilize the App Router’s built-in metadata API (or the <head> component) to include meta tags like title, description, and keywords.
 Ensure pages are pre-rendered for better SEO.
@@ -169,8 +168,7 @@ Validation Procedure:
 
 SEO Auditing: Run an SEO audit (using Lighthouse or similar tools) to verify that meta tags and page structures are correctly implemented.
 Performance Profiling: Use tools like Lighthouse in Chrome DevTools to ensure fast load times.
-Pre-render Check: Inspect the generated HTML (via “view source”) to confirm that static content is rendered as expected.
-10. Deployment and Documentation
+Pre-render Check: Inspect the generated HTML (via “view source”) to confirm that static content is rendered as expected. 10. Deployment and Documentation
 Deployment:
 
 Build the project using npm run build or yarn build.

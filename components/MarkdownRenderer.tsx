@@ -4,7 +4,13 @@ import remarkGfm from 'remark-gfm';
 import rehypeSanitize from 'rehype-sanitize';
 import rehypeHighlight from 'rehype-highlight';
 import 'highlight.js/styles/github-dark.css';
-import type { AnchorHTMLAttributes, HTMLAttributes, TableHTMLAttributes, TdHTMLAttributes, ThHTMLAttributes } from 'react';
+import type {
+  AnchorHTMLAttributes,
+  HTMLAttributes,
+  TableHTMLAttributes,
+  TdHTMLAttributes,
+  ThHTMLAttributes,
+} from 'react';
 
 interface MarkdownRendererProps {
   content: string;
@@ -21,12 +27,17 @@ const customComponents: Partial<Components> = {
       className="text-blue-600 hover:text-blue-800 underline"
     />
   ),
-  
+
   // Enhanced code block handling
-  code: ({ className, inline, children, ...props }: HTMLAttributes<HTMLElement> & { inline?: boolean }) => {
+  code: ({
+    className,
+    inline,
+    children,
+    ...props
+  }: HTMLAttributes<HTMLElement> & { inline?: boolean }) => {
     const match = /language-(\w+)/.exec(className || '');
     const language = match ? match[1] : '';
-    
+
     return !inline && match ? (
       <div className="relative group">
         {language && (
@@ -44,15 +55,12 @@ const customComponents: Partial<Components> = {
       </code>
     );
   },
-  
+
   // Enhanced blockquote styling
   blockquote: (props: HTMLAttributes<HTMLQuoteElement>) => (
-    <blockquote
-      {...props}
-      className="pl-4 border-l-4 border-gray-200 text-gray-700 italic"
-    />
+    <blockquote {...props} className="pl-4 border-l-4 border-gray-200 text-gray-700 italic" />
   ),
-  
+
   // Enhanced table styling
   table: (props: TableHTMLAttributes<HTMLTableElement>) => (
     <div className="overflow-x-auto my-8">
@@ -84,4 +92,4 @@ export default function MarkdownRenderer({ content, className = '' }: MarkdownRe
       {content}
     </ReactMarkdown>
   );
-} 
+}
