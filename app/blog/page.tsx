@@ -42,12 +42,13 @@ async function getPosts(): Promise<PostMeta[]> {
           const fileContents = await fs.readFile(filePath, 'utf8');
           const { data, content } = matter(fileContents);
 
-          return {
+          const postData = {
             ...data,
             slug: filename.replace(/\.md$/, ''),
-            readingTime: getReadingTime(content),
             excerpt: getExcerpt(content),
           } as PostMeta;
+
+          return postData;
         })
     );
 
@@ -94,12 +95,6 @@ export default async function BlogPage() {
                               day: 'numeric',
                             })}
                           </time>
-                          {post.readingTime && (
-                            <>
-                              <span>·</span>
-                              <span>{post.readingTime}</span>
-                            </>
-                          )}
                         </div>
                         {post.description && (
                           <p className="text-xl text-gray-600 mb-4">{post.description}</p>

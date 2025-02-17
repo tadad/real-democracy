@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import type { Post } from '@/types/post';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
 import type { Metadata } from 'next';
+import React from 'react';
 
 async function getPost(slug: string): Promise<Post | null> {
   try {
@@ -23,12 +24,8 @@ async function getPost(slug: string): Promise<Post | null> {
   }
 }
 
-type Props = {
-  params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+// @ts-ignore
+export async function generateMetadata({ params }: any): Promise<Metadata> {
   const post = await getPost(params.slug);
 
   if (!post) {
@@ -48,19 +45,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description || `Read ${post.title} on My Blog`,
       type: 'article',
       publishedTime: post.date,
-      authors: ['Your Name'],
-      tags: post.tags,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: post.title,
-      description: post.description || `Read ${post.title} on My Blog`,
-      creator: '@yourusername',
     },
   };
 }
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
+// @ts-ignore
+export default async function BlogPost({ params }: any) {
   const post = await getPost(params.slug);
 
   if (!post) {
