@@ -1,33 +1,29 @@
 ---
-title: About Me
-description: Learn more about who I am and what I do
-date: "2024-02-16"
-tags: ["about", "personal"]
+title: About
+description: what is real democracy
+date: "2025-02-17"
+tags: ["about"]
 ---
 
-# About Me
+# What are we doing
+Representative democracy is in crisis.
+Blockchain is the solution.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Most people see blockchain as
+- a new money system
+- a world computer
+- a big casino
+- a scam
 
-## My Journey
+All of these are correct, and yet none of them capture the big picture vision: blockchain is an internet native government.
+As the 21st century continues, this will only become more obvious.
+It began with disentangling money from the state, and it will end by disintegrating the state entirely.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Post Script
+The US government itself is all of the above:
+- a money (USD)
+- a world computer (a legal system, determining what is "true")
+- a big casino (the stock market)
+- a scam (civilization)
 
-### What I Do
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-## Skills & Expertise
-
-- Nemo enim ipsam voluptatem quia voluptas
-- Sit aspernatur aut odit aut fugit
-- Sed quia consequuntur magni dolores
-- Eos qui ratione voluptatem sequi nesciunt
-
-### Projects & Achievements
-
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
-
-## Get in Touch
-
-Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+Perhaps I'll go into why civilization is a scam in a future post.
