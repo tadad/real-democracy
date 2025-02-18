@@ -1,85 +1,47 @@
 ---
 title: Fully On-Chain Government
 date: '2025-02-17'
-description: Blockchains are internet native governments. What does this mean?
-tags: ['democracy', 'blockchain', 'government']
+# description: Internet native government
+tags: ['blockchain', 'government']
 ---
 
-# v0.0.1
+Mainstream narratives cast blockchain as a technology for minting new monies, a world computer, a casino, or even a scam.
+While these labels hold some truth, they overlook the most important point: blockchains are internet-native governments.
+They was engineered to sever money's dependence on the state—and they will ultimately dismantle the modern state itself.
 
-Representative democracy is in crisis.
-Blockchain is the solution.
+Blockchains already manage core government functions: identity verification, corporate incorporation, property records, and more.
+These operations occur in seconds and clicks, a stark contrast to DMV lines, multi-day wire transfers, and rampant identity fraud pervasive in modern society.
+Each day, the benefits of living entirely on-chain over a legacy “boomer-government” become ever more evident.
 
-Most people see blockchain as
-
-- a technology to create new monies
-- a world computer
-- a big casino
-- a scam
-
-All of these are correct, and yet none of them capture the big picture vision: blockchain is an internet native government.
-As the 21st century continues, this will only become more obvious.
-It began with disentangling money from the state, and it will end by disintegrating the state entirely.
-
-Most blockchains already handle core government services: identity, record-keeping, incorporation, a financial system, etc.
-All of these operations happen in a matter of seconds and a few clicks.
-Contrast this with the long lines at the DMV, the 3 days it takes to send an wire transfer, and rampant identity fraud.
-Every day it gets easier to live without a boomer-government and live your entire life on-chain.
-
-By the end of the 21st century, chains will eat governments entirely.
+Lets explore some ways that internet native government will change society.
 
 ## Anything can vote / A vote is just an Asset
+In this new paradigm, every vote is a token, an asset.
+Early American democracy allowed land (and with it, votes) to be bought and sold; fully on-chain governance modernizes this by replacing illiquid property with highly liquid tokens.
+These tokens are universal: owned by humans, DAOs, AIs, or any entity, they can be bought, sold, burned, or traded.
 
-In blockchain parlance, representative democracy works by giving people "soulbound" or non-transferrable NFTs to vote.
-There are no well developed markets for selling your vote, nor coordination mechanisms for bribing large parts of the populace in order to swing elections.
-This system is easily susceptible to sybil attacks.
-The immigration crisis over the course of the 2010s was one big sybil attack on democracy.
-
-In blockchains, a vote is a token, an asset.
-Representative democracy was origincally restricted to land-owning aristocrats, which approximates contemporary blockchain governance much more.
-Land (and thus votes) could be bought and sold.
-Fully On-Chain Governments will look a lot like early American democracy, just replacing illiquid land with extremely-liquid tokens to represent votes rights.
-Furthermore, these tokens can be owned by anyone and anything: a human, a DAO, an AI, etc.
-Anyone and anything can vote, and anyone can do anything with their vote: buy it, sell it, burn it, trade, it, whatever.
-
-The "one billion Americans" meme if not ambitious enough : there will be one trillion Americans voting on a billion decisions every block.
+Envision a future where not just billions, but trillions of digital citizens vote on decisions every block.
 
 ## Bribery is Fundamental
+Every society decries bribery, despite its omnipresence. 
+Blockchain governance inverts this issue by integrating bribery as a core mechanism for incentive alignment.
+When every participant is open to negotiation, bribery transforms into justice delivery mechanism.
 
-Every society complains about bribery and corruption and yet every society has bribery and corruption.
-Blockchains flip this on its head and enshrine bribery as a part of government.
-Perhaps when anyone and everyone becomes bribable, **bribery is justice**.
+Example: Imagine Exxon wants to build a pipeline through an Indian reservation.
+In a representative democracy, they will simply bribe politicians to approve the project without consulting the indians.
+In an on-chain government without middleman, Exxon must bribe the reservation explicitly (perhaps by airdropping them Exxon stock).
+Here, bribery is incentive alignment.
+The problem was never the bribe, but who was receiving it: the politician instead of the constituent.
 
-An example: imagine if Exxon wants to build a pipeline through an indian reservation.
-The indians are obviously not very happy about this.
-In representative democracy, you fix the problem by bribing politicians to sign off on the pipeline, without consulting the the indian reservation.
-In the new system, Exxon must bribe the reservation directly (perhaps by airdropping them Exxon stock).
+## Twitch Plays Congress
+The fundamental issue with representative democracy is the principal-agent problem: the disconnect between the will of the people and the actions of politicians.
+There are two solutions to the problem: a perfect king or a direct democracy.
+In the 21st century, these two options converge into one.
+The autistic AI overlord is the perfect king - an entity that optimally processes the needs and preferences of every individual to produce the optimal decision at every moment.
+However, for the autistic AI overlord to govern effectively, everyone (and everything) must express its desires through bids, asks, prices, and votes.
+In this way, the autistic AI overlord and a direct democracy are really the same thing.
+We are moving closer to perfect monarchy and perfect democracy at the same time.
+Imagine the entire government functioning like [Twitch Plays Pokémon](https://en.wikipedia.org/wiki/Twitch_Plays_Pok%C3%A9mon).
 
-Politicians are corruptable middlemen, and there is _no_ way to fix this problem without getting rid of the middleman.
-Bribery is a dirty word, so maybe we rename it to "incentive alignment" or simply "justice."
-
-## Twitch Plays Government
-
-The fundamental problem with representative democracy is the principle agent problem: the will of the people is at odds with the will of politicians.
-There are two ways to resolve this: a perfect king, and a direct democracy.
-In the 21st century, these two solutions are the same thing.
-The perfect king looks something like an Autistic AI Overlord that takes into account the needs and wants of every individual and makes optimal decisions based on that input.
-However, the only way for the the only way for us to express our wants and needs are through bids, asks, prices, votes, etc.
-The closer we move to a world where everyone is forced to fully express their economic and political preferences, the better decisions the AAOL will make.
-
-In the future, all prices will be floating like stocks.
-People gawked at the idea of Wendy's introducing surge pricing, but it actually makes a lot of sense.
-When the drive-thru is backed up, prices should increase.
-When we keep prices constant during surge hours, we just make everyone pay with their time (the drive thru line gets really long).
-Your options for buying a baconator in the future will be:
-
-- paying more during lunch hours
-- buying a futures contract to lock in the price of your lunch ahead of time
-
-You could even stock up on baconators at 11am and dump them on the market at 12pm for a profit when the lines get long and the prices go up.
-
-All of this is to say: prices are information, and the more information we get about each individual, the better the AI overlord monarch will be.
-"Vote with your dollars" is not just a saying, but a reality in the new system.
-Resources will be allocated efficiently based on the AI overlord superintelligence we call "markets".
-
-Think Twitch plays Pokemon, but it's the entire government and society.
+# In Sum
+Much like how gunpowder transformed decentralized fiefdoms into centralized nation-states, blockchains are igniting a mega-political shift that empowers individuals to reclaim autonomy from broken governments.

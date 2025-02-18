@@ -1,7 +1,8 @@
 ---
 title: About
-description: what is real democracy
+# description: what is real democracy
 date: '2025-02-17'
+tags: ['about']
 ---
 
 I am interested in
