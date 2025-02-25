@@ -57,20 +57,20 @@ export default function PostContainer({ post, showBackToHome = true }: PostConta
               <div className="subtitle">
                 <h2 className="subtitle-text">{post.description}</h2>
               </div>
-              <div className="tags">
+              {/* <div className="tags">
                 <p>
                   <b>Tags:&nbsp;</b>
                   {post.tags &&
                     post.tags?.map((tag, index) => (
                       <React.Fragment key={tag}>
-                        {/* <a href={`/tags/#${tag.toLowerCase()}`}> */}
+                        <a href={`/tags/#${tag.toLowerCase()}`}>
                         {tag}
-                        {/* </a> */}
+                        </a>
                         {index < post.tags!.length - 1 && ' | '}
                       </React.Fragment>
                     ))}
                 </p>
-              </div>
+              </div> */}
               {/* <div className="post-image">
                 <a href="https://dons.directory/images/presswurst.png"><img src="/images/presswurst.png" className="border"></a>
               </div> */}
