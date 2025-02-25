@@ -70,7 +70,7 @@ export default async function BlogPage() {
           <div className="sidebar-card related">
             <h1>
               <a className="red" href="/">
-                On Chain Society
+                0xgov
               </a>
             </h1>
             <h2>

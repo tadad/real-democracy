@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import '@/app/styles/styles.scss';
 
-const name = 'On Chain Society';
-const description = 'On Chain Society is about the future of government and blockchain technology.';
+const name = '0xgov';
+const description = '0xgov is about the future of government and blockchain technology.';
 
 export const metadata: Metadata = {
   title: {
