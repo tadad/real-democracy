@@ -14,7 +14,7 @@ Our vision is clear:
 - **Destruction of all 20th Century Bureaucray:** The complete digitization of society: currency, contracts, records—all transacted on immutable ledgers.
 - **Sovereign Individualism:** Document life beyond banks and states. Showcase how the internet redefines personal liberty.
 
-Submit your articles, research, essays, and creative works to [Dachus](x.com/dac_hus) via dm.
+Submit your articles, research, essays, and creative works to [Dachus](https://x.com/dac_hus) via dm.
 We want technical deep dives, visionary manifestos, and even speculative fiction that turns dystopia into decentralized possibility.
 `
 

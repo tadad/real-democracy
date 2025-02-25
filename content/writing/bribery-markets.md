@@ -15,7 +15,7 @@ For one, the bribee does not get the full bounty.
 The guy that streaks the superbowl does not get all of the capital bet on "NO" (though he should) - the profit is split with interested but passive participants that are merely gambling on the potential of a streaker, but have no intention of streaking themselves.
 The solution to this is quite simple: onchain bribery markets.
 
-Traditionally, bribery is a barter economy where the dobule coincidence of wants forces the briber to establish a relationship with the bribee and come to an agreement.
+Traditionally, bribery is a barter economy where the double coincidence of wants forces the briber to establish a relationship with the bribee and come to an agreement.
 Blockchains open this completely: anyone on earth can put up a contract to streak the superbowl, and anyone can accept it.
 This makes bribery
 - global
