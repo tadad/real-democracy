@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
-import License from '@/components/License';
 
 const content = `
 Centralized institutions and paper-bound bureaucracy have choked the lifeblood of internet revolution.
