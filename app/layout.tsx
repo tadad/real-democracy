@@ -58,6 +58,13 @@ export default function RootLayout({
       <body
       // className={`${unna.className} antialiased`}
       >
+        <div className="mobile-nav">  
+          <div>
+            <a className="silent-link" href="/writing">Writing</a>
+            <a className="silent-link" href="/about">About</a>
+            <a className="silent-link" href="https://x.com/dac_hus">X.com</a>
+          </div>
+        </div>
         {children}
       </body>
     </html>

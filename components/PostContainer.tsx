@@ -34,7 +34,7 @@ export default function PostContainer({ post, showBackToHome = true }: PostConta
             <div className="post-info">
               <div className="date-nav">
                 <p>
-                  <a className="prev" href="/">
+                  <a className="prev" href="/writing">
                     ← Back
                   </a>
                   {post.date && (
