@@ -1,40 +1,62 @@
 ---
 title: Bribery Markets
 date: '2025-02-23'
-# description: Internet native government
+# description: by Dachus
 tags: ['blockchain', 'prediction', 'bribery']
 ---
-People sometimes say that polymarket is more of a bribery market than a prediction market.
-Since humans are participants in the world (not just mere observers) - we can interact with the world to change the probabilities.
-E.g. someone can make money by betting that there will be a streaker at the superbowl, and then just go to the superbowl and streak.
-In a way, the people betting on "NO" are bribing the universe to create a streaker.
-By pushing the probabilities lower, they create more upside for someone to buy YES and then streak.
 
-While Polymarket can be thought of in these terms, it is incredibly inefficient.
-For one, the bribee does not get the full bounty.
-The guy that streaks the superbowl does not get all of the capital bet on "NO" (though he should) - the profit is split with interested but passive participants that are merely gambling on the potential of a streaker, but have no intention of streaking themselves.
-The solution to this is quite simple: onchain bribery markets.
-
-Traditionally, bribery is a barter economy where the double coincidence of wants forces the briber to establish a relationship with the bribee and come to an agreement.
-Blockchains open this completely: anyone on earth can put up a contract to streak the superbowl, and anyone can accept it.
-This makes bribery
-- global
-- psuedonymous
-- (nearly) frictionless
+Traditionally, bribery exists in local markets with high trust relationships: both parties must come face to face in a smokey room to exchange cash for favors.
+The backroom/shady nature of bribery is what requires immense investment into relationships and building reputation; everyone involved needs to be comfortable with their counterparties not just to deliver the favor, but to keep everything secret.
+The addition of a proper legal/dispute system, psuedonymity, and an open marketplace would greatly reduce these costs.
+Blockchains deliver each of these pieces today, allowing bribery to move from
+- local => global
+- high trust => psuedonymous
 - 1 to 1 => N to M
 
 ## Mechanism:
-The bribe amount is locked in a smart contract, and turned into an NFT.
-This NFT is then sold on the open market at a steep discount to the funds locked inside the NFT.
-If, at a predetermined date, an oracle says that the terms of the NFT were satisfied, then the owner of the NFT (the bribee) gets the locked funds.
-Otherwise, the locked funds go back to the briber.
-If there is a dispute with the oracle, it can be resolved via an on-chain jury (ala [UMA](https://uma.xyz/)).
+Every bribe is an NFT which specifies
+- the `bribe`
+- the oracle that will determine whether the bribe was satisfied or not
+- `maturity` - when the `bribe` can be released
+
+The bribe can be one or more tokens, for example if Exxon is bribing a politican to approve a new pipeline they may want to include part cash and part Exxon-equity.
+Anyone on Earth could add to the bounty if they wanted to.
+For example, Chevron may want to add its own cash/equity to juice the rewards for the pipeline approval.
+
+The oracle is modular.
+Optimistic oracles like [UMA](https://uma.xyz) will likely be used for most offchain data.
+If the conditions to release the bribe are purely financial, a price-feed could be used.
+Trusted EOAs backed by a human or LLM could be used as a cheap (but insecure) option, where both parties load their evidence into the context, and it gives you a ruling.
+
+Once the NFT is created and the funds are locked, it can be sold on a marketplace, transferred, burned, fractionalized, etc.
+At maturity, the oracle responds either that the bribe was satisfied, in which case all the locked funds go to the holder of the NFT, or the bribe was not satisfied and the bribes go back to the original wallets.
+
+## Discussion
+Tokens, NFTs, and oracles are sufficient to build a bribery system for anyone to execute any real world action: streak the superbowl, assassinate someone, vote on a law, throw a game, etc.
+The composable nature of these assets opens up interesting possibilities for using bribes:
+
+### Airdropping bribes
+If the bribe is meant for one wallet, you could airdrop the NFT to that wallet directly.
+For example, if you know the president's wallet, you can airdrop a $100M bribe to sign an executive order.
+Anyone could increase the bribe if it isn't enough, adding more and more tokens until he finally signs.
+
+### Fractionalizing Bribes
+Some bribes will require more than one person to effectively execute the favor.
+In this case a DAO could acquire the NFT and decide how to split the bounty once completed.
+For example bribing a board to fire a CEO would require splitting the bribe among everyone that votes to oust the CEO.
+
+### Selling the Bribe
+There is good reason to sell the bribe at a discount to the funds locked inside.
+From the briber's perspective, they are potentially locking their funds until maturity for no reason if no one actually executes the bribe.
+From the bribee's perspective, if they believe they can execute the favor, then they can afford to pay a small price to acquire the right to claim a much larger pot upon completion.
+Forcing someone to buy the bribe is good incentive to make sure they don't just squat on it to waste the briber's opportunity cost.
+
+### Agents
+AI Agents have a very easy time interacting with bits, but they need something else for interacting with atoms.
+Bribery markets allow the agent to contract humans (or other agents) to do ceratin tasks - opening up a gig-economy for *anyone* and any task - from random cab drivers to politicians.
+These bribes can be thought of as intents where "solvers" execute things in the real world in order to manipulate an oracle output to the correct value.
 
 ## Conclusion
-Any entitiey can put up a contract to do any real world action: streak the superbowl, assassinate someone, vote on a law, throw a game, etc.
-Furthermore, no relationship between the parties has to be established - the chain itself is the communication platform to match bribers and bribees.
-They do not even need to reveal their real identities to make this bribe happen.
-Funds can be pooled at either end - all of big oil can put up a contract to pass a bill to build a pipeline, and then all of congress can fractionalize the NFT to split the bribe upon passing the vote.
-People will no longer be merely gambling on the outcomes of events like on polymarket, they will be active participants in shaping the world around them.
-Onchain bribery markets represent a revolution in human coordination and labor markets more generally.
-The "gig economy" can be reshaped using blockchains to eliminate centralized intermediaries and allow for bribees to extract maximum profit with no middlemen.
+Every society decries bribery as a negative thing, and yet every one uses bribes to grease the wheels of bureaucracy.
+Blockchains are the first governments to experiment with bribery as a positive way to align incentives across society.
+The question is not about whether bribery is good or bad but how to make it more transparent and accessible to anyone.
