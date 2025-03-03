@@ -41,10 +41,19 @@ export default function Home() {
                 About
               </Link>
             </h2>
-
             <h2>
               <Link className="silent-link" href="https://x.com/dac_hus">
                 X.com
+              </Link>
+            </h2>
+            <h2>
+              <Link 
+                className="silent-link" 
+                href="/feed.xml" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                RSS
               </Link>
             </h2>
           </div>

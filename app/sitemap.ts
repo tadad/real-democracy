@@ -8,7 +8,7 @@ type Route = {
 };
 
 async function getBlogPosts(): Promise<Route[]> {
-  const postsDirectory = path.join(process.cwd(), 'posts');
+  const postsDirectory = path.join(process.cwd(), 'content', 'writing');
   try {
     const files = await fs.readdir(postsDirectory);
     return files
@@ -44,6 +44,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,
+    },
+    {
+      url: 'https://0xgov.org/feed.xml',
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.8,
     },
   ];
 

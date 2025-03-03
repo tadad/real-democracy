@@ -79,6 +79,11 @@ export default async function BlogPage() {
                 About
               </a>
             </h2>
+            <h2>
+              <a className="silent-link" href="/feed.xml" target="_blank" rel="noopener noreferrer">
+                RSS
+              </a>
+            </h2>
             {/* Add more navigation links as needed */}
           </div>
         </div>

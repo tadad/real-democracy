@@ -46,6 +46,16 @@ export const metadata: Metadata = {
     yandex: 'your-yandex-verification',
     yahoo: 'your-yahoo-verification',
   },
+  alternates: {
+    types: {
+      'application/rss+xml': [
+        {
+          url: '/feed.xml',
+          title: `${name} - RSS Feed`,
+        },
+      ],
+    },
+  },
 };
 
 export default function RootLayout({
@@ -63,6 +73,7 @@ export default function RootLayout({
             <a className="silent-link" href="/writing">Writing</a>
             <a className="silent-link" href="/about">About</a>
             <a className="silent-link" href="/webring">Webring</a>
+            <a className="silent-link rss-link" href="/feed.xml" target="_blank" rel="noopener noreferrer">RSS</a>
             <a className="silent-link" href="https://x.com/dac_hus">X.com</a>
           </div>
         </div>
