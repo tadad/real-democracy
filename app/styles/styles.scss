@@ -54,3 +54,117 @@ Uncomment one of the below lines to override the background color/image of your 
   margin: 0 auto;
   padding: 2rem 1rem;
 }
+
+// Splash page styling
+.splash-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: --bg-red;
+  z-index: 1000;
+  color: #fff;
+}
+
+.splash-content {
+  text-align: center;
+}
+
+.splash-ascii-art {
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 40px;
+  white-space: pre;
+  
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 6px;
+  }
+}
+
+// Glitch effect animations
+@keyframes glitch-skew {
+  0% { transform: skew(0deg); }
+  20% { transform: skew(-1deg); }
+  40% { transform: skew(1deg); }
+  60% { transform: skew(0.5deg); }
+  80% { transform: skew(-0.5deg); }
+  100% { transform: skew(0deg); }
+}
+
+@keyframes glitch-shift {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-2px); }
+  40% { transform: translateX(2px); }
+  60% { transform: translateX(-1px); }
+  80% { transform: translateX(1px); }
+  100% { transform: translateX(0); }
+}
+
+.glitch-effect {
+  animation: glitch-skew 0.2s infinite;
+  position: relative;
+  
+  &::before,
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  &::before {
+    color: #ff00ff;
+    transform: translateX(-3px);
+    animation: glitch-shift 0.1s infinite;
+    opacity: 0.5;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    z-index: -1;
+    text-shadow: -2px 0 #00ffff;
+  }
+  
+  &::after {
+    color: #00ffff;
+    transform: translateX(3px);
+    animation: glitch-shift 0.1s infinite reverse;
+    opacity: 0.5;
+    clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+    z-index: -1;
+    text-shadow: 2px 0 #ff00ff;
+  }
+}
+
+// Additional animations for more intense effects
+@keyframes flicker {
+  0% { opacity: 1; }
+  10% { opacity: 0.8; }
+  20% { opacity: 1; }
+  40% { opacity: 0.7; }
+  50% { opacity: 1; }
+  60% { opacity: 0.9; }
+  80% { opacity: 0.6; }
+  90% { opacity: 1; }
+  100% { opacity: 0.9; }
+}
+
+.splash-container.glitch-effect {
+  animation: flicker 0.3s infinite;
+  
+  .splash-ascii-art, 
+  .splash-button {
+    text-shadow: 
+      2px 2px 1px rgba(255, 0, 255, 0.3),
+      -2px -2px 1px rgba(0, 255, 255, 0.3);
+  }
+}
