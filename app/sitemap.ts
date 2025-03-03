@@ -28,19 +28,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const routes: MetadataRoute.Sitemap = [
     {
-      url: 'http://localhost:3000',
+      url: 'https://0xgov.org',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 1,
     },
     {
-      url: 'http://localhost:3000/about',
+      url: 'https://0xgov.org/about',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'http://localhost:3000/writing',
+      url: 'https://0xgov.org/writing',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,
@@ -48,7 +48,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
 
   const postRoutes: MetadataRoute.Sitemap = blogPosts.map(post => ({
-    url: `http://localhost:3000${post.url}`,
+    url: `https://0xgov.org${post.url}`,
     lastModified: post.lastModified,
     changeFrequency: 'weekly' as const,
     priority: 0.7,

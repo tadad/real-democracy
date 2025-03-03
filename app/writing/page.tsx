@@ -1,16 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import Link from 'next/link';
 import type { PostMeta } from '@/types/post';
-import License from '@/components/License';
-
-function getReadingTime(content: string): string {
-  const wordsPerMinute = 200;
-  const words = content.trim().split(/\s+/).length;
-  const minutes = Math.ceil(words / wordsPerMinute);
-  return `${minutes} min read`;
-}
 
 function getExcerpt(content: string, maxLength: number = 200): string {
   // Remove markdown headings and code blocks
@@ -76,6 +67,11 @@ export default async function BlogPage() {
             <h2>
               <a className="silent-link" href="/writing">
                 Writing
+              </a>
+            </h2>
+            <h2>
+              <a className="silent-link" href="/webring">
+                Webring
               </a>
             </h2>
             <h2>

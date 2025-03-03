@@ -32,11 +32,16 @@ export default function Home() {
               </Link>
             </h2>
             <h2>
+              <Link className="silent-link" href="/webring">
+                Webring
+              </Link>
+            </h2>
+            <h2>
               <Link className="silent-link" href="/about">
                 About
               </Link>
             </h2>
-            {/* <h2><a className="silent-link" href="/dairy-index">Diary</a></h2> */}
+
             <h2>
               <Link className="silent-link" href="https://x.com/dac_hus">
                 X.com

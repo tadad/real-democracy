@@ -19,6 +19,11 @@ export default function Header() {
             </Link>
           </li>
           <li>
+            <Link href="/webring" className="hover:text-gray-600">
+              Webring
+            </Link>
+          </li>
+          <li>
             <Link href="/about" className="hover:text-gray-600">
               About
             </Link>

@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   description,
   keywords: ['government', 'democracy', 'blockchain', 'crypto', 'web development'],
   authors: [{ name: 'Dachus' }],
-  creator: 'Your Name',
-  metadataBase: new URL('http://localhost:3000'), // TODO
+  creator: 'Dachus',
+  metadataBase: new URL('https://0xgov.org'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -62,6 +62,7 @@ export default function RootLayout({
           <div>
             <a className="silent-link" href="/writing">Writing</a>
             <a className="silent-link" href="/about">About</a>
+            <a className="silent-link" href="/webring">Webring</a>
             <a className="silent-link" href="https://x.com/dac_hus">X.com</a>
           </div>
         </div>
