@@ -35,14 +35,16 @@ The homeless get some permanent housing, and the rest of SF doesn't have to step
 Cheap rent has it's own second order positives: suddenly artists, aspiring entrepreneurs, and young people can afford to leave the burbs for a dense urban area.
 I know a guy that lived in a tent in Marin to pursue his dream of becoming a founder.
 Imagine how much better it would've been if he didn't have to cross the Golden Gate Bridge just to meet more tech bros.
-In a few generations it could become gentrified and look like the Amalfi coast (It's not entirely unhead of: Singapore was once just bunch of opium dens on a rock).
+
+In a few generations the SF favela could become gentrified and look like the Amalfi coast.
 These days, the most expensive favelas in Rio are basically tourist destinations with hotels, restaurants, and bars.
 It actually doesn't take that much time and effort to improve these places once they're established.
+Singapore was once just bunch of opium dens on a rock.
 
 ## Conclusion
 
-The frontier is reopening, but it is not a physical frontier of virgin land, but an internal frontier within our cities: a forced rezoning of America, the arrival of the slum, the latinification of America.
+The arrival of the slum and the latinification of America is upon us.
 You want 1 billion Americans?
 You want to increase TFR?
 You want YIMBY?
-The only way forward is the favela - the Brazilification of North America.
+The only way forward is the favela.
