@@ -2,12 +2,12 @@
 title: Fully On-Chain Government
 date: '2025-02-17'
 # description: The BoomerGov vs the ZoomerGov
-tags: ['blockchain', 'government']
+# tags: ['blockchain', 'government']
 ---
 
 Blockchains are internet-native governments.
 They replace
-- government forms with websites
+- paper forms with html forms
 - hand-written signatures with digital signatures
 - government-id with cryptographic ID
 - paper-money with internet money
@@ -15,16 +15,14 @@ They replace
 - laws with code
 - ballots with liquid tokens
 
-The most important megapolitical shift of the 21st century will be the adoption of blockchains by nation states, and the transformation of blockchains into states themselves.
-
 ## The Boomer-Gov vs the Zoomer-Gov
-The boomer governments (nation states) and the zoomer governments (blockchains) have many analogous pieces:
+For those that don't see the full picture yet, I'm going to walk through the similarities and differences between the boomer governments (nation states) and the zoomer governments (blockchains):
 
 ### Validators are Judges
-Everyday law is executed by judges (and juries sometimes) where fuzzy human langauge is transformed into deterministic judgements and precedents.
+The laws of nation states are decided and enforced by a system of judges, police, militaries, etc. - and they help turn fuzzy human langauge and circumstances into deterministic judgements and precedents.
 In the zoomer-gov, these "judges" are called validators or miners, and their job is literally deterministic: they execute code.
-There is no ambiguity, there is only one way the code should execute, and so they do.
-If you somehow fuck up (maliciously or accidentally) and get the wrong result, the zoomer government will sieze your assets (we call this "slashing").
+There is no ambiguity: there is only one way the code should execute.
+If a validator screws this up the deterministic computation (maliciously or accidentally), the zoomer government will sieze your assets as punishment (we call this "slashing").
 Certain laws and contracts in the boomer world will be reduced entirely to code: e.g. options/futures/other financial contracts.
 Other agreements will always require a natural language interpretation to judge what bounds of the contract were breached: e.g. what does it mean to act "in good faith"?
 
@@ -34,7 +32,7 @@ The boomer-gov would call these "constitutional amendments" - while the zoomer g
 They can change everything from inflation or economic policies, siezing/freezing funds, speeding-up (or slowing down) certain procedures, change the costs for the entire system, literally anything you can imagine.
 When the boomer-gov "hard forks," it usually involves lots of violence, civil war, assassinations, asset siezure, revolutions, etc.
 Sometimes everyone just agrees that the system is broken and agrees to fix it non-violently (France is on it's 5th Republic but had less than 5 revolutions).
-The so-called "blocksize wars" in Bitcoin's history were literally digital wars that resulted in forks of the protocol; today, multiple chains claim to be the true emperor of Rome.
+The so-called "blocksize wars" in Bitcoin's history were literally digital wars that resulted in forks of the protocol; today, multiple chains claim to be the "true" successor of the Roman Empire.
 
 ### Corporations are DAOs
 On top of this constitution + legal framework, blockchains let you permissionlessly launch corporations (DAOs).
@@ -46,6 +44,7 @@ Most corporations could only move some of their operations to a DAO today - they
 
 ---
 For thousands of years, we've only had natural lanaguage courts, which are good for handling ambiguity and edge cases, but are extremely expensive and slow.
-Blockchains are complementary: the are extremely fast but cannot handle any ambiguity at all - they just execute code.
-While blockchains will have a tough time acquiring militaries and natural language courts, existing nation states could easily adopt blockchain technology to replace paper bureaucracies.
-0xgov is about this transition to digital government over the course of the 21st century.
+Blockchains are complementary: the are extremely fast but cannot handle natural language.
+There are two ways this can play out:
+- Boomer governments introduce Fed-chains that are parallel fast finality legal systems for executing machine-language agreements
+- Blockchains integrate judges and juries (human or AI) that allow natural language disputes to be settled natively onchain.
