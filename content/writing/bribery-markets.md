@@ -5,6 +5,11 @@ date: '2025-02-23'
 tags: ['blockchain', 'prediction', 'bribery']
 ---
 
+The vilification of bribery is misplaced.
+Bribery is a pragmatic tool to grease the wheels of society, ensuring that goverment and commerce operate smoothly.
+Rather than viewing bribery as a form of corruption, we might consider it a positive and often a necessity.
+In that case we should think about how to make it better.
+
 Traditionally, bribery exists in local markets with high trust relationships: both parties must come face to face in a smokey room to exchange cash for favors.
 The backroom/shady nature of bribery is what requires immense investment into relationships and building reputation; everyone involved needs to be comfortable with their counterparties not just to deliver the favor, but to keep everything secret.
 The addition of a proper legal/dispute system, psuedonymity, and an open marketplace would greatly reduce these costs.
