@@ -32,28 +32,13 @@ export default function Home() {
               </Link>
             </h2>
             <h2>
-              <Link className="silent-link" href="/webring">
-                Webring
-              </Link>
-            </h2>
-            <h2>
-              <Link className="silent-link" href="/about">
-                About
+              <Link className="silent-link" href="/important-links">
+                Important Links
               </Link>
             </h2>
             <h2>
               <Link className="silent-link" href="https://x.com/dac_hus">
                 X.com
-              </Link>
-            </h2>
-            <h2>
-              <Link 
-                className="silent-link" 
-                href="/feed.xml" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                RSS
               </Link>
             </h2>
           </div>

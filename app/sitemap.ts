@@ -34,22 +34,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 1,
     },
     {
-      url: 'https://0xgov.org/about',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
       url: 'https://0xgov.org/writing',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,
-    },
-    {
-      url: 'https://0xgov.org/feed.xml',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.8,
     },
   ];
 

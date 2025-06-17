@@ -2,15 +2,12 @@ import type { Metadata } from 'next';
 import '@/app/styles/styles.scss';
 
 const name = '0xgov';
-const description = '0xgov is about the future of government and blockchain technology.';
 
 export const metadata: Metadata = {
   title: {
     default: name,
     template: `%s | ${name}`,
   },
-  description,
-  keywords: ['government', 'democracy', 'blockchain', 'crypto', 'web development'],
   authors: [{ name: 'Dachus' }],
   creator: 'Dachus',
   metadataBase: new URL('https://0xgov.org'),
@@ -20,13 +17,11 @@ export const metadata: Metadata = {
     url: '/',
     siteName: name,
     title: name,
-    description,
     images: ['/image.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: name,
-    description,
     creator: '@dac_hus',
     images: ['/image.png'],
   },
@@ -71,9 +66,7 @@ export default function RootLayout({
         <div className="mobile-nav">  
           <div>
             <a className="silent-link" href="/writing">Writing</a>
-            <a className="silent-link" href="/about">About</a>
-            <a className="silent-link" href="/webring">Webring</a>
-            <a className="silent-link rss-link" href="/feed.xml" target="_blank" rel="noopener noreferrer">RSS</a>
+            <a className="silent-link" href="/important-links">Important Links</a>
             <a className="silent-link" href="https://x.com/dac_hus">X.com</a>
           </div>
         </div>

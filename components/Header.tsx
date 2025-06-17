@@ -5,7 +5,7 @@ export default function Header() {
     <header className="p-4 bg-white shadow-md">
       <nav className="max-w-4xl mx-auto flex justify-between items-center">
         <Link href="/" className="text-xl font-bold">
-          My Blog
+          0xgov
         </Link>
         <ul className="flex space-x-6">
           <li>
@@ -14,18 +14,13 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/blog" className="hover:text-gray-600">
-              Blog
+            <Link href="/writing" className="hover:text-gray-600">
+              Writing
             </Link>
           </li>
           <li>
-            <Link href="/webring" className="hover:text-gray-600">
-              Webring
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className="hover:text-gray-600">
-              About
+            <Link href="/important-links" className="hover:text-gray-600">
+              Important Links
             </Link>
           </li>
         </ul>

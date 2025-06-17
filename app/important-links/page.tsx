@@ -10,18 +10,6 @@ const links: LinkData[] = [
     link: "http://exo-science.com/",
   },
   {
-    name: "Dons Directory",
-    link: "https://dons.directory/",
-  },
-  {
-    name: "Remilia Corporation",
-    link: "https://www.remilia.org/",
-  },
-  {
-    name: "The Mars Review of Books",
-    link: "https://store.marsreview.org/",
-  },
-  {
     name: "Eat Wild",
     link: "https://www.eatwild.com/",
   },
@@ -46,6 +34,10 @@ const links: LinkData[] = [
     link: "https://longestlevers.com/"
   },
   {
+    name: "Dons Directory",
+    link: "https://dons.directory/",
+  },
+  {
     name: "Healthfully",
     link: "https://healthfully.ai/"
   },
@@ -56,6 +48,22 @@ const links: LinkData[] = [
   {
     name: "XCELA",
     link: "https://xcela.org/"
+  },
+  {
+    name: "Passage Press",
+    link: "https://passage.press/"
+  },
+  {
+    name: "Remilia Corporation",
+    link: "https://www.remilia.org/",
+  },
+  {
+    name: "The Mars Review of Books",
+    link: "https://store.marsreview.org/",
+  },
+  {
+    name: "Chadnet",
+    link: "https://chadnet.org/"
   }
 ];
 
@@ -68,7 +76,6 @@ export default function ExternalLink() {
             <td>
               <a className="archive-anchor" href="/"> Home</a>
               <a className="archive-anchor" href="/writing">Writing</a>
-              <a className="archive-anchor" href="/about"> About</a>
               <a className="archive-anchor" href="https://x.com/dac_hus">X.com</a>
             </td>
           </tr>
@@ -89,7 +96,7 @@ export default function ExternalLink() {
                   {item.name}
                 </td>
                 <td>
-                  <a href={item.link} style={{ "fontWeight": "bold" }}>
+                  <a href={item.link} style={{ "fontWeight": "bold" }} target="_blank" rel="noopener noreferrer">
                     {item.link}
                   </a>
                 </td>
