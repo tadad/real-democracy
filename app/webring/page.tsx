@@ -20,6 +20,42 @@ const links: LinkData[] = [
   {
     name: "The Mars Review of Books",
     link: "https://store.marsreview.org/",
+  },
+  {
+    name: "Eat Wild",
+    link: "https://www.eatwild.com/",
+  },
+  {
+    name: "Aajonus.net",
+    link: "https://aajonus.net/"
+  },
+  {
+    name: "Peaty Sharing Repo",
+    link: "https://github.com/peatysharing/bibliography",
+  },
+  {
+    name: "Open Theory by Michael Edward Johnson",
+    link: "https://opentheory.net/"
+  },
+  {
+    name: "Literature.bio: The Most Important Biological Texts",
+    link: "https://literature.bio/",
+  },
+  {
+    name: "Longest Levers: Static Protocols for Dynamic Lives",
+    link: "https://longestlevers.com/"
+  },
+  {
+    name: "Healthfully",
+    link: "https://healthfully.ai/"
+  },
+  {
+    name: "Based Physics",
+    link: "https://www.basedphysics.com/"
+  },
+  {
+    name: "XCELA",
+    link: "https://xcela.org/"
   }
 ];
 

@@ -5,6 +5,4 @@ date: '2025-02-17'
 tags: ['about']
 ---
 
-We are interested in
-- the future of government
-- blockchain technology
+This is the personal blog of [Dachus](https://x.com/dac_hus)
