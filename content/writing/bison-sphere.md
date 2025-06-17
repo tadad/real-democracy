@@ -1,4 +1,9 @@
-# AMERICA STARVES
+---
+title: AMERICA STARVES
+date: '2025-06-17'
+# description: by Dachus
+# tags: ['blockchain', 'prediction', 'bribery']
+---
 You think this is fine? You think strip malls and industrial monoculture farms are “civilization”? You kneel to the pasteurizer, slurp his corn syrup, chant his mantras of safety and stability while soil dies and rivers choke. America, bloated and pacified, rots under the yolk of agro‑industrial corruption.
 
 Behold the Cure: The Bison Sphere, a re-wilding of the Great Plains into Pleistocenic Majesty. The old Steppe pulsed with 1.6 billion tonnes of living grace. Today? Our mere 1.2 billion tonnes of biomass lives and dies on the feedlot. The factory-farmed steer and suburban commuter: more alike than different. But we can choose differently…From Texas to the Yukon, we can resurrect Life on Earth.
