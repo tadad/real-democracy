@@ -1,6 +1,6 @@
 ---
 title: The EigenMan
-date: '2025-08-06'
+date: '2025-08-07'
 description: Nietzsche and Linear Algebra
 # tags: ['blockchain', 'government']
 ---
@@ -46,11 +46,9 @@ Environmental regulators understand that to protect endogenous diversity, you mu
 If only they would listen to themselves when it came to human biodiversity...
 Real diversity requires fences and borders.
 
-So what is the EigenMan?
-The EigenMan is the solution to modernity.
-The EigenMan is someone that and _adds_ dimensionality to the vector space of EigenSouls, someone that invents a whole new way of life.
+So what is the _Ubermensch_, or _EigenMan_?
+The EigenMan is the solution to and enemy of modernity.
+The EigenMan is someone that and _adds_ dimensionality to the vector space of human souls.
 He creates values, behaviors, he listens to and follows no one but himself.
-He is _orthogonal_ to the everyone else, and because of this modernity hates him and seeks to destroy him.
-Under any turmoil or transformation, he stays constant, because he is the transformation.
-
-0xgov preaches the EigenMan.
+He is _orthogonal_ to the everyone else, and for this modernity wants to destroy him.
+He is man separating and speciating into a new being.
