@@ -11,8 +11,6 @@ There are two kinds of law I want to distinguish between:
 - "Code Law": Deterministic, rules-based, quantitative. Can be enforced by machines (smart contracts, DAOs, accounting software, etc.).
 - "Word Law": Interpretive, context-dependent, qualitative. Requires judges, precedent, human values.
 
-Traditional or analogue governments are slow at handling both, and most people have already learned to work around the limited bandwidth of the legal system.
-
 I first want to focus on "Code Law" which includes most of finance, incorporation, banking, identity etc.
 All of these domains that the government handles is basically just in the realm of record keeping: who owns what? who has how much money? who is authorized to drive, fly, get a gun, travel, etc.? When did this or that transaction occur? Who voted for what, and who is even allowed to vote?
 The systems that government uses to answers these questions are extremely arcane.
