@@ -1,7 +1,7 @@
 ---
-title: Technology and the Future of the Legal System
+title: Technology and the Legal System
 date: '2025-08-06'
-description: How AI and blockchains will save the legal system
+description: AI and blockchains will save the courts
 # tags: ['blockchain', 'government']
 ---
 
@@ -15,7 +15,7 @@ Traditional governments are slow at handling both, and most people have already 
 
 I first want to focus on "Code Law" which includes most of finance, incorporation, banking, identity etc.
 A delaware C-corp or a bank account are effectively just lines in a database, yet setting one up means navigating a gauntlet of paperwork and fees.
-It takes weeks just to get a passport or get a criminal background check - things that should just be GET queries from a database
+It takes weeks just to get a passport or get a criminal background check - things that should just be GET queries from a database.
 In finance, they've learned to just avoid the courts alltogether.
 A futures contract never sees the courts because it is so well-defined, standardized, and basically self-executing - so why involve the state at all?
 Blockchains are the ideal foundation for Code Law.
