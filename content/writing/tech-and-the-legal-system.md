@@ -2,7 +2,6 @@
 title: Technology and the Legal System
 date: '2025-08-06'
 description: AI and blockchains will save the courts
-# tags: ['blockchain', 'government']
 ---
 
 For this essay, there are two kinds of law:

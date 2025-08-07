@@ -2,7 +2,6 @@
 title: The EigenMan
 date: '2025-08-07'
 description: Nietzsche and Linear Algebra
-# tags: ['blockchain', 'government']
 ---
 
 I think it's best to understand Nietzsche's _Ubermensch_ through vector spaces.

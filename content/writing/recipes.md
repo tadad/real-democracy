@@ -1,8 +1,6 @@
 ---
 title: Recipes for LIFE
 date: '2025-08-05'
-# description: AI and blockchains will save the courts
-# tags: ['blockchain', 'government']
 ---
 ## High Meat
 Cures depression and constipation
