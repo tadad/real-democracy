@@ -80,6 +80,7 @@ export default function ExternalLink() {
             <td>
               <a className="archive-anchor" href="/"> Home</a>
               <a className="archive-anchor" href="/writing">Writing</a>
+              <a className="archive-anchor" href="/important-books">Important Books</a>
               <a className="archive-anchor" href="https://x.com/dac_hus">X.com</a>
             </td>
           </tr>

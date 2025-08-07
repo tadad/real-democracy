@@ -37,6 +37,11 @@ export default function Home() {
               </Link>
             </h2>
             <h2>
+              <Link className="silent-link" href="/important-books">
+                Important Books
+              </Link>
+            </h2>
+            <h2>
               <Link className="silent-link" href="https://x.com/dac_hus">
                 X.com
               </Link>
