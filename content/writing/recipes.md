@@ -4,8 +4,6 @@ date: '2025-08-06'
 # description: AI and blockchains will save the courts
 # tags: ['blockchain', 'government']
 ---
-# Recipes for LIFE
-
 ## High Meat
 Cures depression and constipation
 ### Ingredients
