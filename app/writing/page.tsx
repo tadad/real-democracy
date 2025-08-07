@@ -74,6 +74,11 @@ export default async function BlogPage() {
                 Important Links
               </a>
             </h2>
+            <h2>
+              <a className="silent-link" href="/important-books">
+                Important Books
+              </a>
+            </h2>
           </div>
         </div>
 
