@@ -65,14 +65,6 @@ const links: LinkData[] = [
     name: "Chadnet",
     link: "https://chadnet.org/"
   },
-  {
-    name: "Crazy Horse Memorial",
-    link: "https://www.crazyhorsememorial.org/"
-  },
-  {
-    name: "American Prairie",
-    link: "https://americanprairie.org/"
-  }
 ];
 
 export default function ExternalLink() {
