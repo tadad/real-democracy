@@ -5,17 +5,16 @@ description: AI and blockchains will save the courts
 # tags: ['blockchain', 'government']
 ---
 
-Crypto and AI have the possibility to radiclly reshape our legal system.
-There are two kinds of law I want to distinguish between:
+For this essay, there are two kinds of law:
 
 - "Code Law": Deterministic, rules-based, quantitative. Can be enforced by machines (smart contracts, DAOs, accounting software, etc.).
 - "Word Law": Interpretive, context-dependent, qualitative. Requires judges, precedent, human values.
 
-I first want to focus on "Code Law" which includes most of finance, incorporation, banking, identity etc.
+"Code Law" includes most of finance, incorporation, banking, identity etc.
 All of these domains that the government handles is basically just in the realm of record keeping: who owns what? who has how much money? who is authorized to drive, fly, get a gun, travel, etc.? When did this or that transaction occur? Who voted for what, and who is even allowed to vote?
 The systems that government uses to answers these questions are extremely arcane.
-Must I describe the DMV? Which is just a place that gives you an ID that authorizes you to drive.
-A delaware C-corp or a bank account require navigating a gauntlet of paperwork and fees.
+The DMV is globally infamous, and it all it does is print IDs and authorizations to drive.
+A Delaware C-corp or a bank account require navigating a gauntlet of paperwork and fees.
 It takes weeks just to get a passport or get a criminal background check - things that should just be a digital-signature and a GET request.
 No one believes in election integrity anymore (or at least since 2020) - mostly caused by the fact that we still use paper ballots with no ID checks.
 In finance, they've learned to just avoid the courts alltogether: a futures contract never sees the courts because it is well-defined, standardized, and basically self-executing - which begs the question as to why the state is invovled at all.
@@ -34,7 +33,7 @@ None of these questions can be answered by blockchains; the answers are wrapped 
 Unlike blockchains, LLMs are built to handle fuzzier, language-based disputes and could easily replace judges.
 They speak our lanaguage and are able to navigate the gray zones.
 
-It is not hard to reimagine the court system lawyers are prompt engineers to an LLM judge.
+It is not hard to imagine a court system where judges are LLMs and lawyers are prompt engineers.
 Cases could be heard and ruled in a matter of minutes instead of months; a criminal trial could be resolved on the spot; jail time starts after a verdict, not before; Civil disputes are adjudicated instantly; bandwidth explodes.
 Paradoxically, this will drastically increase litigation: if it takes 5 minutes to sue someone, why not?
 
