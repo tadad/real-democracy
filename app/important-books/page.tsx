@@ -45,7 +45,12 @@ const links: LinkData[] = [
     name: "A Century of War",
     author: "F. William Engdahl",
     link: "https://www.amazon.com/Century-War-Anglo-American-Politics-World-ebook/dp/B005Y4EZWQ/"
-  }
+  },
+  {
+    name: "The Sovereign Individual",
+    author: "James Dale Davidson & William Rees-Mogg",
+    link: "https://www.amazon.com/Sovereign-Individual-Mastering-Transition-Information/dp/0684832720"
+  },
 ];
 
 export default function ExternalLink() {
