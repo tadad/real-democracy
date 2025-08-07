@@ -14,30 +14,29 @@ When a linear transformation is applied to a vector space (like rotating, scalin
 For a good introdution to linear algebra, watch [3Blue1Brown](https://www.3blue1brown.com/topics/linear-algebra).
 
 Humanity is one big vector space, where every human is a vector.
-You are a linear combination of other souls that define the entirety of existence.
-A BasisSoul is just a "kind of guy": a Christian, a Hindu, a priest, a warrior, a king, a courtesan, ...
-It's true that everyone is a unique special snowflake, but most just are a linear combination of other BasisSouls.
+This vector-space is described by "basis-souls" which are just different "kinds of guy": a Christian, a Hindu, a priest, a warrior, a king, a courtesan, an engineer, ...
+It's true that everyone is a unique special snowflake, but these are all contained within the space decsribed by these basis-souls.
 When people complain that "everyone is the same" - what they really mean is that there aren't that many "kinds of guys," i.e. the dimensionality of humanity is extremely low.
 The office, the factory, and the modern military all demand a certain kind of man to keep the lights on.
-A company cannot function if one day its employees are diligently working, and the next they mutiny.
-The modern world has no need for unique individuals, only herd animals.
-Modernity excludes and exterminates these souls and breeds a new kind of man (really a farm animal) tame enough to serve it.
+Anyone with too much of the prophet or warrior within them will never survive in the modern world.
+A company cannot function if one day its employees are diligently working, and the next they disappear into the mountains.
+Modernity excludes and exterminates these souls and breeds a new kind of man (really a farm animal) to serve it.
 
 The telos of modernity is to compress all of huamnity into a one-dimensional vectorspace, where everyone is a copy of a copy of a copy, like an ant colony.
 This is the so-called "bug man"...
 World population has never been higher and yet the number of unique human souls has never been lower.
-Look at Europe, a mere province of the American Empire.
 In the 19th century, there was more diversity East of the Mississippi than exists across all of NATO today.
 There were tribes of warlike plains indians until the 1870s.
 There were native German speakers in Texas and Ohio until the 1970s.
-I don't even think they speak French is New Orleans anymore.
-In Europe, the EU's homogenization project is going well, as every European learns English and ingests American culture.
+I don't even think they speak French in New Orleans anymore.
 
 *This is not just a Western problem.*
 Every city on Earth feels the same.
 Every year, more Mongolians are giving up their ancestral way of life, and living in stationary Yurts-shantytowns on the outskirts of Ulaanbaatar so that they can work in factories.
 Even Peruvian peasants that speak quechua have smartphones with TikTok.
-All of humanity is converging on a single type that serves modernity.
+Farmers and pastoralists all over the world are hesistant whether to follow their ancestors or join the herd.
+The armies of the world are larger than ever but the number of armies themselves are in the dozens.
+The vector space of humanity is losing dimensionality every day.
 
 *Furthermore, this is not just a huamn problem.*
 The world is greener today than it was 100 years ago, but the _kinds_ of green have been drastically reduced.
